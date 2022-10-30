@@ -8,11 +8,11 @@ public class TestThreadCheckArray {
 			Thread thread1, thread2;
 			System.out.println("Enter array size");
 			int num  = input.nextInt();
-			ArrayList<Integer> array = new ArrayList<>(num);
+			ArrayList<Integer> array = new ArrayList<>();
 			System.out.println("Enter numbers for array");
 			
 			for (int index = 0; index < num; index++) 
-				array.set(index, input.nextInt());
+				array.add( input.nextInt());
 			
 			System.out.println("Enter number");
 			num = input.nextInt();
